@@ -179,6 +179,85 @@ ul>li>a:hover{
         display: block;
         padding: 0.5rem 0;
     }
+
+    .nav-toggle-label {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: #121212;
+        padding: 2rem;
+        z-index: 1000;
+    }
+
+    .nav-toggle:checked ~ .nav-menu {
+        display: block;
+    }
+
+    .close-btn {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    ul > li {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    /* About Me Section */
+    .container-left, .container-right {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .about-me-img, .about-me-img-right {
+        width: 15rem;
+        height: 15rem;
+        margin: 1rem 0;
+    }
+
+    .about-me-description-left, .about-me-description-right {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .hobbies-header, .about-me-header {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-section {
+        margin-bottom: 1rem;
+    }
+
+    .social-links, .contact-links {
+        align-items: center;
+    }
+
+    .contact-links a, .contact-links p {
+        justify-content: center;
+    }
 }
 
 /* Footer Styles */
@@ -313,5 +392,21 @@ footer {
 
     .social-links {
         align-items: center;
+    }
+}
+
+/* Add smaller screen adjustments */
+@media screen and (max-width: 480px) {
+    .about-me-img, .about-me-img-right {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .about-me-description-left, .about-me-description-right {
+        font-size: 1rem;
+    }
+
+    .hobbies-header, .about-me-header {
+        font-size: 1.75rem;
     }
 }
