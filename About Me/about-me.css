@@ -224,6 +224,37 @@ ul>li>a:hover{
         padding: 1rem;
     }
 
+    /* Update Hobbies section specifically */
+    .container-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1rem;
+    }
+
+    .hobbies-header {
+        order: 1;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #D32F2F;
+    }
+
+    .about-me-img-right {
+        order: 2;
+        width: 15rem;
+        height: 15rem;
+        margin: 1rem 0;
+    }
+
+    .about-me-description-right {
+        order: 3;
+        padding: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-right: 0;
+    }
+
     .about-me-img, .about-me-img-right {
         width: 15rem;
         height: 15rem;
